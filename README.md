@@ -1,3 +1,32 @@
+## Ejercicio de Facturas Impagadas
+
+Se desea obtener:
+Total de número de facturas no pagadas de los últimos 30 días
+Total del importe no pagado, de esas mismas facturas
+=> Se obtendrá con los siguientes atributos: numeroFacturas, importeTotal, fechaDesde, fechaHasta.
+
+Se ejecutará en 2 contextos:
+Desde el navegador: /web/facturacion/facturas-impagadas
+Generar fichero mensualmente mediante tarea cron.
+
+
+### Resultado
+
+En primer lugar, en la url indicada se obtiene un JSON con la información de la query:
+
+<img src="https://i.ibb.co/yFVjyy5/image.png" alt="image"><br/>
+
+Por otro lado, se ha programado la tarea cron para ejecutarse mensualmente y, que en este caso, genere un fichero txt con la respuesta. Se puede obtener una muestra del fichero ejecutando directamente el comando:
+```
+php artisan mostrar:facturasImpagadas
+```
+Que generará el txt con el siguiente contenido:
+> [{"numerofacturas":3,"importetotal":"1380","fechahasta":"2023-01-30","fechadesde":"2022-12-31"}]
+
+<br/>
+<hr/>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
