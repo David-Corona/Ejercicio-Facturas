@@ -1,13 +1,13 @@
 ## Ejercicio de Facturas Impagadas
 
 Se desea obtener:
-Total de número de facturas no pagadas de los últimos 30 días
-Total del importe no pagado, de esas mismas facturas
+- Total de número de facturas no pagadas de los últimos 30 días
+- Total del importe no pagado, de esas mismas facturas
 => Se obtendrá con los siguientes atributos: numeroFacturas, importeTotal, fechaDesde, fechaHasta.
 
 Se ejecutará en 2 contextos:
-Desde el navegador: /web/facturacion/facturas-impagadas
-Generar fichero mensualmente mediante tarea cron.
+- Desde el navegador: /web/facturacion/facturas-impagadas
+- Generar fichero mensualmente mediante tarea cron.
 
 
 ### Resultado
